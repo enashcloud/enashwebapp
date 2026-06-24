@@ -19,32 +19,43 @@ app.get("/", (req, res) => {
 });
 
 app.post("/contact", async (req, res) => {
+  console.log("REQUEST BODY:", req.body);
+
   try {
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
+      console.log("MISSING DATA");
       return res.status(400).json({ error: "Missing fields" });
     }
+
+    console.log("SENDING EMAIL...");
 
     const response = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "siphumathendo222@outlook.com",
-      subject: "New Contact",
+      subject: "CONTACT FORM TEST",
       html: `
-        <p>${name}</p>
-        <p>${email}</p>
-        <p>${message}</p>
+        <h1>NEW MESSAGE</h1>
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Message: ${message}</p>
       `,
     });
 
-    console.log("EMAIL SENT:", response);
+    console.log("RESEND RESPONSE:", response);
 
-    res.json({ success: true });
+    return res.json({
+      success: true,
+      response,
+    });
+
   } catch (err) {
-    console.error("ERROR:", err);
+    console.error("FULL ERROR:", err);
 
-    res.status(500).json({
+    return res.status(500).json({
       error: err.message,
+      full: err,
     });
   }
 });
