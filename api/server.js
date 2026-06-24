@@ -32,7 +32,7 @@ app.post("/contact", async (req, res) => {
     console.log("SENDING EMAIL...");
 
     const response = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "siphumathendo222@outlook.com",
       to: "siphumathendo222@outlook.com",
       subject: "CONTACT FORM TEST",
       html: `
