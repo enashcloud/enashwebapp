@@ -23,7 +23,7 @@ app.post("/contact", async (req, res) => {
 
     const response = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "your@email.com",
+      to: "siphumathendo222@outlook.com",
       subject: "New Contact",
       html: `
         <p>${name}</p>
