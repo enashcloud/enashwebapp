@@ -1,1174 +1,989 @@
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import {
-  Cloud,
-  Server,
-  Workflow,
-  Menu,
-  X,
-  CheckCircle2,
-  Mail,
-  Phone,
-  MapPin,
   ArrowRight,
+  BadgeCheck,
+  BookOpen,
+  BriefcaseBusiness,
+  CheckCircle2,
+  ChevronDown,
+  CloudCog,
+  Code2,
+  Cpu,
+  Database,
+  FileText,
+  GraduationCap,
+  HelpCircle,
+  Layers3,
+  Mail,
+  Menu,
+  Minus,
+  Newspaper,
+  Phone,
+  Plus,
+  Search,
+  Server,
   ShieldCheck,
-  Loader2,
-  AlertCircle,
+  ShoppingBag,
+  Sparkles,
+  Star,
+  Store,
+  Users,
+  X,
+  Zap,
 } from "lucide-react";
+import logoLight from "./assets/logo-2-light-background.png";
+import logoIcon from "./assets/logo-3-icon-tile.png";
+import socialBanner from "./assets/cover-1-social-banner.png";
 
-/* ----------------------------- content data ----------------------------- */
+const CONTACT_EMAIL = "hello@enash.co.za";
+const SITE_URL = "https://www.enash.co.za";
 
-const NAV_LINKS = [
+const navLinks = [
   { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "Why us", href: "#values" },
-  { label: "About", href: "#about" },
+  { label: "Developers", href: "#developers" },
+  { label: "Shop", href: "#shop" },
+  { label: "Courses", href: "#courses" },
+  { label: "Articles", href: "#articles" },
   { label: "Contact", href: "#contact" },
 ];
 
-const SERVICES = [
+const serviceGroups = [
   {
-    tag: "Detail A",
-    icon: Cloud,
-    title: "Cloud Migration Sprint",
+    id: "microsoft",
+    title: "Microsoft services",
+    eyebrow: "For businesses and individuals",
+    icon: CloudCog,
     description:
-      "A fixed-fee project that moves your business off on-premise servers or shared hosting and onto Microsoft Azure, without the downtime drama.",
-    includes: [
-      "Infrastructure & risk assessment",
-      "Migration plan with fixed timeline",
-      "Data migration and cutover",
-      "Two weeks of post-migration support",
-    ],
-    format: "Fixed-fee project · 2–6 weeks",
-  },
-  {
-    tag: "Detail B",
-    icon: Server,
-    title: "Managed Cloud & IT Support",
-    description:
-      "Ongoing monitoring, backups, security patching, and a helpdesk that actually answers, so your systems stay online and up to date.",
-    includes: [
-      "24/7 monitoring and alerting",
-      "Automated, tested backups",
-      "Security patching on a schedule",
-      "Helpdesk support for your team",
-    ],
-    format: "Monthly retainer · 30 days' notice to cancel",
-  },
-  {
-    tag: "Detail C",
-    icon: Workflow,
-    title: "AI Quick Wins",
-    description:
-      "Small, focused automations, a chatbot, a document workflow, a reporting dashboard, built on Azure AI and bolted onto what you already run.",
-    includes: [
-      "One discovery workshop",
-      "One working automation, shipped",
-      "Training for your team",
-      "30 days of tuning after launch",
-    ],
-    format: "Fixed-fee add-on · 1–3 weeks",
-  },
-];
-
-const PROCESS_STEPS = [
-  {
-    n: "01",
-    title: "Survey",
-    body: "We map what you have today: servers, software, spend, and risk. You get a plain-language account of what we find, not a sales pitch.",
-  },
-  {
-    n: "02",
-    title: "Schematic",
-    body: "We design the target setup: what moves to Azure, what stays put, what changes, and exactly what it costs before any work starts.",
-  },
-  {
-    n: "03",
-    title: "Build",
-    body: "We migrate, configure, and test in an order built to avoid surprises, with a rollback plan in place before we touch anything live.",
-  },
-  {
-    n: "04",
-    title: "Handover",
-    body: "You get documentation, trained access for your team, and, if you choose the retainer, an ongoing support line that picks up.",
-  },
-];
-
-const VALUES = [
-  {
-    icon: ShieldCheck,
-    title: "Fixed-fee delivery",
-    body: "Project quotes are fixed before work starts. No surprise line items once we're in.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Security-first by default",
-    body: "Baseline hardening is included in every engagement, not sold separately afterwards.",
-  },
-  {
-    icon: MapPin,
-    title: "Registered in South Africa",
-    body: "Enash Cloud trades under Indesign and Developers (Pty) Ltd, registered locally since 2020.",
-  },
-  {
-    icon: Cloud,
-    title: "Built on Microsoft Azure",
-    body: "We specialise in one cloud platform so we can go deep on it, rather than spreading thin.",
-  },
-];
-
-/* ------------------------------ small hooks ------------------------------ */
-
-function useReveal() {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
-      setVisible(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisible(true);
-            observer.disconnect();
-          }
-        });
+      "Setup, support and optimisation for Microsoft 365, Azure, Teams, SharePoint, Outlook, security and business automation.",
+    services: [
+      {
+        title: "Microsoft 365 setup",
+        price: "From R1,500",
+        summary: "Business email, domains, Outlook, Teams, OneDrive and user accounts configured properly.",
+        bullets: ["Email and domain setup", "User accounts and licences", "Teams and OneDrive basics"],
       },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+      {
+        title: "Azure cloud setup",
+        price: "From R3,500",
+        summary: "Azure hosting, databases, backups, App Service, Static Web Apps and cost controls.",
+        bullets: ["Hosting and deployment", "Database connection", "Budget alerts and monitoring"],
+      },
+      {
+        title: "Power Platform automation",
+        price: "From R2,500",
+        summary: "Automate repeated admin work with Power Automate, Forms, Excel, SharePoint and email flows.",
+        bullets: ["Workflow mapping", "One working automation", "Training handover"],
+      },
+      {
+        title: "Security and backup check",
+        price: "From R1,200",
+        summary: "MFA, device basics, email security, permission review and backup checks for small teams.",
+        bullets: ["MFA review", "Backup plan", "Risk report"],
+      },
+    ],
+  },
+  {
+    id: "developers",
+    title: "Developer services",
+    eyebrow: "Build and improve digital systems",
+    icon: Code2,
+    description:
+      "Websites, web apps, dashboards, APIs, databases and business systems built for real business workflows.",
+    services: [
+      {
+        title: "Business website build",
+        price: "From R4,500",
+        summary: "Fast modern websites for brands, services, portfolios, shops and landing pages.",
+        bullets: ["React frontend", "Responsive design", "SEO-ready pages"],
+      },
+      {
+        title: "Web app development",
+        price: "From R8,500",
+        summary: "Dashboards, client portals, booking systems, quote systems and internal tools.",
+        bullets: ["Auth-ready structure", "Admin views", "API integration"],
+      },
+      {
+        title: "Database and backend setup",
+        price: "From R5,500",
+        summary: "Connect signup, login, orders and dashboards to a secure backend and database.",
+        bullets: ["Azure SQL or Firebase", "REST API", "User data flows"],
+      },
+      {
+        title: "Maintenance and support",
+        price: "From R950 / month",
+        summary: "Monthly updates, fixes, content changes, backups and performance checks.",
+        bullets: ["Priority fixes", "Monthly report", "Small content edits"],
+      },
+    ],
+  },
+  {
+    id: "growth",
+    title: "Business growth extras",
+    eyebrow: "Extra income streams on the site",
+    icon: Store,
+    description:
+      "Shop, courses, articles, newsletters and productised services so Enash can generate leads and sell online.",
+    services: [
+      {
+        title: "Online shop setup",
+        price: "From R3,500",
+        summary: "Sell digital products, templates, service packages, devices and business resources.",
+        bullets: ["Cart frontend", "Checkout-ready flow", "Product catalogue"],
+      },
+      {
+        title: "Free course library",
+        price: "Included",
+        summary: "Free learning content to attract visitors and convert them into service leads.",
+        bullets: ["Course cards", "Enroll form", "Progress-ready structure"],
+      },
+      {
+        title: "Articles and news hub",
+        price: "Included",
+        summary: "Publish Microsoft tips, tech news, business guides and Enash updates.",
+        bullets: ["Category filters", "Featured articles", "Newsletter capture"],
+      },
+      {
+        title: "Lead generation system",
+        price: "Included",
+        summary: "Quote builder and contact forms that prepare enquiries for email or backend integration.",
+        bullets: ["Quote summary", "Validation", "Backend-ready data"],
+      },
+    ],
+  },
+];
 
-  return [ref, visible];
+const packages = [
+  {
+    name: "Launch",
+    fit: "For individuals and new businesses",
+    price: "From R2,500",
+    icon: Sparkles,
+    features: ["Business email setup", "One-page website guidance", "Microsoft 365 basics", "Security checklist"],
+  },
+  {
+    name: "Business Cloud",
+    fit: "For teams that need Microsoft support",
+    price: "From R6,500",
+    icon: Server,
+    featured: true,
+    features: ["Microsoft 365 tenant setup", "Teams and SharePoint structure", "Azure hosting advice", "Admin handover"],
+  },
+  {
+    name: "Build System",
+    fit: "For companies that need custom software",
+    price: "From R12,500",
+    icon: Layers3,
+    features: ["React web app", "Dashboard screens", "Database/API plan", "Deployment to Azure"],
+  },
+];
+
+const products = [
+  {
+    id: "prod-m365-audit",
+    name: "Microsoft 365 Health Check",
+    category: "Microsoft",
+    price: 1200,
+    type: "Service",
+    rating: 4.9,
+    description: "A practical review of accounts, licences, security, Teams, OneDrive and Outlook setup.",
+  },
+  {
+    id: "prod-web-care",
+    name: "Website Care Plan",
+    category: "Developer",
+    price: 950,
+    type: "Monthly",
+    rating: 4.8,
+    description: "Monthly updates, fixes, uptime checks, backup checks and light content changes.",
+  },
+  {
+    id: "prod-cloud-backup",
+    name: "Cloud Backup Setup",
+    category: "Microsoft",
+    price: 1800,
+    type: "Service",
+    rating: 4.8,
+    description: "Backup strategy, basic restore testing and cloud storage setup for small businesses.",
+  },
+  {
+    id: "prod-react-template",
+    name: "React Business Template",
+    category: "Digital",
+    price: 450,
+    type: "Digital product",
+    rating: 4.7,
+    description: "A clean landing page starter template for service businesses and freelancers.",
+  },
+  {
+    id: "prod-dashboard",
+    name: "Sales Dashboard Starter",
+    category: "Digital",
+    price: 650,
+    type: "Digital product",
+    rating: 4.7,
+    description: "Spreadsheet-friendly dashboard layout for tracking sales, leads and tasks.",
+  },
+  {
+    id: "prod-support-hour",
+    name: "Remote Tech Support Hour",
+    category: "Support",
+    price: 350,
+    type: "Service",
+    rating: 4.9,
+    description: "One remote support session for Microsoft, website, email or device troubleshooting.",
+  },
+];
+
+const courses = [
+  {
+    id: "course-m365",
+    title: "Microsoft 365 Basics for Small Business",
+    level: "Beginner",
+    duration: "55 min",
+    lessons: 8,
+    category: "Microsoft",
+    description: "Learn Outlook, Teams, OneDrive and safe account setup for a small business.",
+  },
+  {
+    id: "course-azure",
+    title: "Azure Starter for Founders",
+    level: "Beginner",
+    duration: "1h 20m",
+    lessons: 10,
+    category: "Azure",
+    description: "Understand App Service, Static Web Apps, databases, budgets and safe deployment basics.",
+  },
+  {
+    id: "course-react",
+    title: "Build a Landing Page with React",
+    level: "Beginner",
+    duration: "2h",
+    lessons: 12,
+    category: "Development",
+    description: "Create a fast responsive landing page with reusable components and clean CSS.",
+  },
+  {
+    id: "course-cyber",
+    title: "Cybersecurity Basics for Teams",
+    level: "Beginner",
+    duration: "45 min",
+    lessons: 6,
+    category: "Security",
+    description: "Passwords, MFA, phishing, backups and safe sharing explained in plain English.",
+  },
+];
+
+const articles = [
+  {
+    title: "How small businesses should start with Microsoft 365",
+    category: "Guide",
+    date: "2026-06-20",
+    read: "5 min read",
+    summary: "A simple path for email, Teams, file sharing and account security before adding complex tools.",
+  },
+  {
+    title: "Azure budgets: protect your startup credits",
+    category: "Azure",
+    date: "2026-06-18",
+    read: "4 min read",
+    summary: "The first cost controls every founder should configure before deploying apps and databases.",
+  },
+  {
+    title: "When a business needs a custom dashboard",
+    category: "Development",
+    date: "2026-06-14",
+    read: "6 min read",
+    summary: "Signs that spreadsheets are no longer enough and what to build before overcomplicating your system.",
+  },
+  {
+    title: "Enash update: building a services, shop and learning hub",
+    category: "News",
+    date: "2026-06-10",
+    read: "3 min read",
+    summary: "The direction of the Enash website and how the platform will support businesses and individuals.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Can Enash work with both businesses and individuals?",
+    answer:
+      "Yes. The site is structured for business services, individual support, online products, free courses and article-led lead generation.",
+  },
+  {
+    question: "Is the shop fully ready for real payments?",
+    answer:
+      "The frontend cart is functional. To take real payments, connect PayFast, Stripe, Yoco, Peach Payments or another payment provider through a backend.",
+  },
+  {
+    question: "Can the forms save to a database?",
+    answer:
+      "The forms are validation-ready and email-ready. The next step is connecting them to Azure Functions, App Service, Firebase or another backend.",
+  },
+  {
+    question: "Can courses become paid later?",
+    answer:
+      "Yes. The course cards and enrolment flow are separated from the data, so you can add prices, user accounts and progress tracking later.",
+  },
+];
+
+const serviceOptions = serviceGroups.flatMap((group) =>
+  group.services.map((service) => `${group.title}: ${service.title}`)
+);
+
+function formatCurrency(value) {
+  return new Intl.NumberFormat("en-ZA", {
+    style: "currency",
+    currency: "ZAR",
+    maximumFractionDigits: 0,
+  }).format(value);
 }
 
-function Reveal({ children, className = "", delay = 0, as = "div" }) {
-  const [ref, visible] = useReveal();
-  const Tag = as;
-  return (
-    <Tag
-      ref={ref}
-      className={`ec-reveal ${visible ? "is-visible" : ""} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </Tag>
-  );
+function buildMailto(subject, body) {
+  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-function useCountUp(target, decimals, durationMs, start) {
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    if (!start) return;
-    let raf;
-    const startTime = performance.now();
-
-    const tick = (now) => {
-      const progress = Math.min((now - startTime) / durationMs, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setValue(target * eased);
-      if (progress < 1) raf = requestAnimationFrame(tick);
-    };
-
-    raf = requestAnimationFrame(tick);
-    return () => raf && cancelAnimationFrame(raf);
-  }, [start, target, durationMs]);
-
-  return value.toFixed(decimals);
-}
-
-/* --------------------------------- app --------------------------------- */
-
-export default function App() {
+function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [statsStarted, setStatsStarted] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
-  const [formState, setFormState] = useState("idle"); // idle | submitting | sent | error
+  const [activeServiceGroup, setActiveServiceGroup] = useState(serviceGroups[0].id);
+  const [productSearch, setProductSearch] = useState("");
+  const [productCategory, setProductCategory] = useState("All");
+  const [cart, setCart] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
+  const [courseEmail, setCourseEmail] = useState("");
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterMessage, setNewsletterMessage] = useState("");
+  const [openFaq, setOpenFaq] = useState(0);
+  const [quote, setQuote] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    budget: "R2,500 - R7,500",
+    timeline: "This month",
+    message: "",
+    selected: [serviceOptions[0], serviceOptions[4]],
+  });
+  const [quoteStatus, setQuoteStatus] = useState("idle");
 
-  useEffect(() => {
-    setStatsStarted(true);
-  }, []);
+  const activeGroup = serviceGroups.find((group) => group.id === activeServiceGroup) || serviceGroups[0];
+  const productCategories = ["All", ...Array.from(new Set(products.map((product) => product.category)))];
 
-  const slaTarget = useCountUp(99.9, 1, 1500, statsStarted);
-  const responseTarget = useCountUp(2, 0, 1100, statsStarted);
+  const filteredProducts = useMemo(() => {
+    const query = productSearch.toLowerCase().trim();
+    return products.filter((product) => {
+      const matchesCategory = productCategory === "All" || product.category === productCategory;
+      const matchesSearch =
+        !query ||
+        product.name.toLowerCase().includes(query) ||
+        product.description.toLowerCase().includes(query) ||
+        product.category.toLowerCase().includes(query);
+      return matchesCategory && matchesSearch;
+    });
+  }, [productSearch, productCategory]);
 
-  const scrollTo = (href) => (event) => {
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+  const cartTotal = cart.reduce((total, item) => total + item.quantity * item.price, 0);
+
+  function scrollToSection(event, href) {
     event.preventDefault();
     setMenuOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+    const element = document.querySelector(href);
+    if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
-  const updateField = (field) => (event) =>
-    setForm((current) => ({ ...current, [field]: event.target.value }));
+  function addToCart(product) {
+    setCartOpen(true);
+    setCart((current) => {
+      const existing = current.find((item) => item.id === product.id);
+      if (existing) {
+        return current.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item));
+      }
+      return [...current, { ...product, quantity: 1 }];
+    });
+  }
 
-  const isValidEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  function updateCartQuantity(id, change) {
+    setCart((current) =>
+      current
+        .map((item) => (item.id === id ? { ...item, quantity: item.quantity + change } : item))
+        .filter((item) => item.quantity > 0)
+    );
+  }
 
-  const handleSubmit = () => {
-    if (!form.name.trim() || !form.email.trim() || !form.message.trim() || !isValidEmail(form.email)) {
-      setFormState("error");
+  function toggleQuoteService(label) {
+    setQuote((current) => {
+      const exists = current.selected.includes(label);
+      return {
+        ...current,
+        selected: exists ? current.selected.filter((item) => item !== label) : [...current.selected, label],
+      };
+    });
+  }
+
+  function addServiceToQuote(title) {
+    setQuote((current) => ({
+      ...current,
+      selected: current.selected.includes(title) ? current.selected : [...current.selected, title],
+    }));
+    const element = document.querySelector("#quote");
+    if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function handleQuoteSubmit(event) {
+    event.preventDefault();
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(quote.email.trim());
+    if (!quote.name.trim() || !validEmail || quote.selected.length === 0) {
+      setQuoteStatus("error");
       return;
     }
-    setFormState("submitting");
-    window.setTimeout(() => {
-      setFormState("sent");
-    }, 900);
-  };
+    setQuoteStatus("ready");
+  }
+
+  function handleNewsletter(event) {
+    event.preventDefault();
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newsletterEmail.trim());
+    setNewsletterMessage(validEmail ? "You are on the Enash updates list." : "Enter a valid email first.");
+  }
+
+  function enrollCourse(courseId) {
+    if (!courseEmail.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(courseEmail.trim())) {
+      setCourseEmail("");
+      return;
+    }
+    setEnrolledCourses((current) => (current.includes(courseId) ? current : [...current, courseId]));
+  }
+
+  const quoteBody = [
+    `Name: ${quote.name}`,
+    `Email: ${quote.email}`,
+    `Phone: ${quote.phone || "Not provided"}`,
+    `Company: ${quote.company || "Not provided"}`,
+    `Budget: ${quote.budget}`,
+    `Timeline: ${quote.timeline}`,
+    "",
+    "Selected services:",
+    ...quote.selected.map((item) => `- ${item}`),
+    "",
+    "Message:",
+    quote.message || "No extra message.",
+  ].join("\n");
+
+  const checkoutBody = [
+    "Hi Enash, I want to order these items:",
+    "",
+    ...cart.map((item) => `- ${item.name} x${item.quantity} = ${formatCurrency(item.price * item.quantity)}`),
+    "",
+    `Total: ${formatCurrency(cartTotal)}`,
+    "",
+    "Please send me the payment and delivery/onboarding details.",
+  ].join("\n");
 
   return (
-    <div className="ec-root">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap');
+    <div className="site-shell">
+      <header className="header">
+        <a className="brand" href="#top" onClick={(event) => scrollToSection(event, "#top")} aria-label="Enash home">
+          <img src={logoLight} alt="Enash" />
+        </a>
 
-        .ec-root {
-          --bg: #142C46;
-          --bg-deep: #0D1F33;
-          --bg-panel: #1B3B5C;
-          --bg-panel-soft: #1F4467;
-          --ink: #F4EFE3;
-          --ink-dim: rgba(244, 239, 227, 0.7);
-          --ink-faint: rgba(244, 239, 227, 0.45);
-          --accent: #E0793A;
-          --accent-soft: rgba(224, 121, 58, 0.16);
-          --status: #7FD9B9;
-          --line: rgba(244, 239, 227, 0.09);
-          --line-strong: rgba(244, 239, 227, 0.24);
-          --font-display: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
-          --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
-          --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
-
-          background: var(--bg);
-          color: var(--ink);
-          font-family: var(--font-body);
-          line-height: 1.5;
-          -webkit-font-smoothing: antialiased;
-          position: relative;
-          overflow-x: hidden;
-        }
-
-        .ec-root *,
-        .ec-root *::before,
-        .ec-root *::after {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-
-        .ec-root a { color: inherit; text-decoration: none; }
-        .ec-root ul { list-style: none; }
-        .ec-root button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
-        .ec-root input, .ec-root textarea { font: inherit; color: inherit; }
-
-        .ec-root :focus-visible {
-          outline: 2px solid var(--accent);
-          outline-offset: 3px;
-        }
-
-        .ec-skip {
-          position: absolute;
-          left: -9999px;
-          top: 0;
-          background: var(--accent);
-          color: var(--bg-deep);
-          padding: 0.6rem 1rem;
-          z-index: 100;
-        }
-        .ec-skip:focus { left: 1rem; top: 1rem; }
-
-        .ec-container {
-          max-width: 1180px;
-          margin: 0 auto;
-          padding: 0 1.5rem;
-        }
-
-        @media (min-width: 768px) {
-          .ec-container { padding: 0 2rem; }
-        }
-
-        .ec-eyebrow {
-          font-family: var(--font-mono);
-          font-size: 0.72rem;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: var(--accent);
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-        }
-        .ec-eyebrow::before {
-          content: '';
-          width: 6px;
-          height: 6px;
-          background: var(--accent);
-        }
-
-        .ec-section { padding: 5rem 0; position: relative; }
-        @media (min-width: 768px) { .ec-section { padding: 7rem 0; } }
-
-        .ec-section-head { max-width: 640px; margin-bottom: 3rem; }
-        .ec-section-title {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-          line-height: 1.15;
-          margin-top: 0.85rem;
-          letter-spacing: -0.01em;
-        }
-        .ec-section-sub {
-          margin-top: 0.85rem;
-          color: var(--ink-dim);
-          font-size: 1.02rem;
-          max-width: 36rem;
-        }
-
-        .ec-blueprint-grid {
-          background-image:
-            linear-gradient(var(--line) 1px, transparent 1px),
-            linear-gradient(90deg, var(--line) 1px, transparent 1px);
-          background-size: 36px 36px;
-        }
-
-        /* reveal-on-scroll */
-        .ec-reveal {
-          opacity: 0;
-          transform: translateY(18px);
-          transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .ec-reveal.is-visible { opacity: 1; transform: translateY(0); }
-
-        @media (prefers-reduced-motion: reduce) {
-          .ec-root *, .ec-root *::before, .ec-root *::after {
-            animation: none !important;
-            transition: none !important;
-          }
-          .ec-reveal { opacity: 1; transform: none; }
-        }
-
-        /* ---------------------------- nav ---------------------------- */
-        .ec-nav {
-          position: sticky;
-          top: 0;
-          z-index: 50;
-          background: rgba(13, 31, 51, 0.88);
-          backdrop-filter: blur(10px);
-          border-bottom: 1px solid var(--line-strong);
-        }
-        .ec-nav__inner {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          height: 4.25rem;
-        }
-        .ec-brand {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: 1.15rem;
-          letter-spacing: -0.01em;
-          display: flex;
-          align-items: baseline;
-          gap: 0.4rem;
-        }
-        .ec-brand span { color: var(--accent); }
-        .ec-nav__links {
-          display: none;
-          align-items: center;
-          gap: 2rem;
-        }
-        .ec-nav__links a {
-          font-size: 0.92rem;
-          color: var(--ink-dim);
-          transition: color 0.2s ease;
-        }
-        .ec-nav__links a:hover { color: var(--ink); }
-
-        @media (min-width: 920px) {
-          .ec-nav__links { display: flex; }
-          .ec-nav__toggle { display: none; }
-        }
-
-        .ec-nav__toggle {
-          display: inline-flex;
-          padding: 0.4rem;
-        }
-
-        .ec-nav__mobile {
-          border-top: 1px solid var(--line-strong);
-          padding: 1rem 0 1.5rem;
-        }
-        .ec-nav__mobile a {
-          display: block;
-          padding: 0.65rem 0;
-          font-size: 1rem;
-          color: var(--ink-dim);
-        }
-
-        .ec-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-family: var(--font-mono);
-          font-size: 0.82rem;
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          padding: 0.75rem 1.3rem;
-          border: 1px solid var(--line-strong);
-          transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        }
-        .ec-btn--primary {
-          background: var(--accent);
-          border-color: var(--accent);
-          color: var(--bg-deep);
-        }
-        .ec-btn--primary:hover { transform: translateY(-1px); filter: brightness(1.06); }
-        .ec-btn--ghost { color: var(--ink); }
-        .ec-btn--ghost:hover { border-color: var(--ink-faint); background: rgba(244,239,227,0.04); }
-        .ec-btn--block { width: 100%; justify-content: center; }
-        .ec-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
-        /* ---------------------------- hero ---------------------------- */
-        .ec-hero { padding: 4.5rem 0 0; }
-        @media (min-width: 768px) { .ec-hero { padding: 6rem 0 0; } }
-
-        .ec-hero__title {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: clamp(2.2rem, 5.4vw, 3.6rem);
-          line-height: 1.08;
-          letter-spacing: -0.01em;
-          margin-top: 1.1rem;
-          max-width: 18ch;
-        }
-        .ec-hero__sub {
-          margin-top: 1.25rem;
-          font-size: 1.1rem;
-          color: var(--ink-dim);
-          max-width: 38rem;
-        }
-        .ec-hero__ctas {
-          margin-top: 2.1rem;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.9rem;
-        }
-
-        .ec-titleblock {
-          margin-top: 3.5rem;
-          border: 1px solid var(--line-strong);
-          background: var(--bg-deep);
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-        }
-        @media (min-width: 700px) {
-          .ec-titleblock { grid-template-columns: repeat(5, 1fr); }
-        }
-        .ec-titleblock__item {
-          padding: 1.1rem 1.3rem;
-          border-right: 1px solid var(--line-strong);
-          border-bottom: 1px solid var(--line-strong);
-        }
-        @media (min-width: 700px) {
-          .ec-titleblock__item:last-child { border-right: none; }
-          .ec-titleblock__item { border-bottom: none; }
-        }
-        .ec-titleblock__item:nth-child(2n) { border-right: none; }
-        @media (min-width: 700px) {
-          .ec-titleblock__item:nth-child(2n) { border-right: 1px solid var(--line-strong); }
-          .ec-titleblock__item:last-child { border-right: none; }
-        }
-        .ec-titleblock__label {
-          font-family: var(--font-mono);
-          font-size: 0.66rem;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: var(--ink-faint);
-          display: flex;
-          align-items: center;
-          gap: 0.4rem;
-        }
-        .ec-titleblock__value {
-          font-family: var(--font-mono);
-          font-size: 1.25rem;
-          margin-top: 0.35rem;
-        }
-        .ec-status-dot {
-          width: 7px;
-          height: 7px;
-          border-radius: 50%;
-          background: var(--status);
-          box-shadow: 0 0 0 0 rgba(127, 217, 185, 0.6);
-          animation: ec-pulse 2.2s ease-out infinite;
-        }
-        @keyframes ec-pulse {
-          0% { box-shadow: 0 0 0 0 rgba(127, 217, 185, 0.55); }
-          70% { box-shadow: 0 0 0 6px rgba(127, 217, 185, 0); }
-          100% { box-shadow: 0 0 0 0 rgba(127, 217, 185, 0); }
-        }
-        @keyframes ec-spin { to { transform: rotate(360deg); } }
-        .ec-spin { animation: ec-spin 0.8s linear infinite; }
-
-        /* ------------------------- trust strip ------------------------- */
-        .ec-trust {
-          margin-top: 3.25rem;
-          padding: 1rem 0;
-          border-top: 1px solid var(--line-strong);
-          border-bottom: 1px solid var(--line-strong);
-        }
-        .ec-trust p {
-          font-family: var(--font-mono);
-          font-size: 0.78rem;
-          color: var(--ink-faint);
-          letter-spacing: 0.02em;
-          text-align: center;
-        }
-
-        /* --------------------------- services --------------------------- */
-        .ec-services-grid {
-          display: grid;
-          gap: 1.25rem;
-          grid-template-columns: 1fr;
-        }
-        @media (min-width: 860px) {
-          .ec-services-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-
-        .ec-card {
-          position: relative;
-          background: var(--bg-panel);
-          border: 1px solid var(--line-strong);
-          padding: 1.9rem;
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-        .ec-card::before, .ec-card::after,
-        .ec-card .ec-corner-tl, .ec-card .ec-corner-br {
-          content: '';
-          position: absolute;
-          width: 14px;
-          height: 14px;
-          border-color: var(--accent);
-          opacity: 0;
-          transition: opacity 0.25s ease;
-        }
-        .ec-card::before {
-          top: -1px; left: -1px;
-          border-top: 2px solid var(--accent);
-          border-left: 2px solid var(--accent);
-        }
-        .ec-card::after {
-          bottom: -1px; right: -1px;
-          border-bottom: 2px solid var(--accent);
-          border-right: 2px solid var(--accent);
-        }
-        .ec-card:hover::before, .ec-card:hover::after,
-        .ec-card:focus-within::before, .ec-card:focus-within::after {
-          opacity: 1;
-        }
-
-        .ec-card__top { display: flex; align-items: center; justify-content: space-between; }
-        .ec-card__tag {
-          font-family: var(--font-mono);
-          font-size: 0.68rem;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: var(--ink-faint);
-        }
-        .ec-card__icon {
-          width: 38px; height: 38px;
-          display: grid;
-          place-items: center;
-          border: 1px solid var(--line-strong);
-          color: var(--accent);
-        }
-        .ec-card__title {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: 1.3rem;
-        }
-        .ec-card__desc { color: var(--ink-dim); font-size: 0.96rem; }
-        .ec-card__list { display: flex; flex-direction: column; gap: 0.55rem; margin-top: 0.25rem; }
-        .ec-card__list li {
-          display: flex;
-          gap: 0.55rem;
-          align-items: flex-start;
-          font-size: 0.9rem;
-          color: var(--ink-dim);
-        }
-        .ec-card__list svg { flex-shrink: 0; margin-top: 0.15rem; color: var(--status); }
-        .ec-card__format {
-          margin-top: auto;
-          padding-top: 1rem;
-          border-top: 1px solid var(--line-strong);
-          font-family: var(--font-mono);
-          font-size: 0.78rem;
-          color: var(--ink-faint);
-        }
-
-        /* --------------------------- process --------------------------- */
-        .ec-process {
-          display: grid;
-          gap: 0;
-          grid-template-columns: 1fr;
-          border: 1px solid var(--line-strong);
-        }
-        @media (min-width: 860px) {
-          .ec-process { grid-template-columns: repeat(4, 1fr); }
-        }
-        .ec-step {
-          padding: 1.8rem;
-          border-bottom: 1px solid var(--line-strong);
-          position: relative;
-        }
-        @media (min-width: 860px) {
-          .ec-step { border-bottom: none; border-right: 1px solid var(--line-strong); }
-          .ec-step:last-child { border-right: none; }
-        }
-        .ec-step:last-child { border-bottom: none; }
-        .ec-step__n {
-          font-family: var(--font-mono);
-          color: var(--accent);
-          font-size: 0.85rem;
-          letter-spacing: 0.08em;
-        }
-        .ec-step__title {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: 1.15rem;
-          margin-top: 0.6rem;
-        }
-        .ec-step__body {
-          margin-top: 0.6rem;
-          font-size: 0.9rem;
-          color: var(--ink-dim);
-        }
-
-        /* --------------------------- values --------------------------- */
-        .ec-values-grid {
-          display: grid;
-          gap: 1.25rem;
-          grid-template-columns: 1fr;
-        }
-        @media (min-width: 700px) {
-          .ec-values-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        .ec-value {
-          display: flex;
-          gap: 1rem;
-          padding: 1.5rem;
-          border: 1px solid var(--line-strong);
-          background: var(--bg-panel-soft);
-        }
-        .ec-value__icon {
-          width: 40px; height: 40px;
-          flex-shrink: 0;
-          display: grid;
-          place-items: center;
-          border: 1px solid var(--line-strong);
-          color: var(--status);
-        }
-        .ec-value__title { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; }
-        .ec-value__body { margin-top: 0.35rem; font-size: 0.9rem; color: var(--ink-dim); }
-
-        /* --------------------------- about --------------------------- */
-        .ec-about__grid {
-          display: grid;
-          gap: 2.5rem;
-          align-items: center;
-          grid-template-columns: 1fr;
-        }
-        @media (min-width: 860px) {
-          .ec-about__grid { grid-template-columns: 1.1fr 0.9fr; }
-        }
-        .ec-about__body p { color: var(--ink-dim); font-size: 1rem; }
-        .ec-about__body p + p { margin-top: 1rem; }
-        .ec-about__diagram {
-          border: 1px solid var(--line-strong);
-          padding: 1.5rem;
-          background: var(--bg-deep);
-        }
-
-        /* --------------------------- contact --------------------------- */
-        .ec-contact__grid {
-          display: grid;
-          gap: 2.5rem;
-          grid-template-columns: 1fr;
-        }
-        @media (min-width: 900px) {
-          .ec-contact__grid { grid-template-columns: 1fr 1fr; }
-        }
-        .ec-field { margin-bottom: 1.1rem; }
-        .ec-field label {
-          display: block;
-          font-family: var(--font-mono);
-          font-size: 0.72rem;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: var(--ink-faint);
-          margin-bottom: 0.45rem;
-        }
-        .ec-field input, .ec-field textarea {
-          width: 100%;
-          background: var(--bg-deep);
-          border: 1px solid var(--line-strong);
-          padding: 0.75rem 0.9rem;
-          font-size: 0.95rem;
-        }
-        .ec-field input::placeholder, .ec-field textarea::placeholder { color: var(--ink-faint); }
-        .ec-field textarea { min-height: 120px; resize: vertical; }
-        .ec-field input:focus, .ec-field textarea:focus { border-color: var(--accent); }
-
-        .ec-form-note {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 0.85rem;
-          margin-top: 0.9rem;
-        }
-        .ec-form-note--error { color: var(--accent); }
-        .ec-form-note--success { color: var(--status); }
-
-        .ec-contact-info {
-          display: flex;
-          flex-direction: column;
-          gap: 1.1rem;
-        }
-        .ec-contact-info__row { display: flex; gap: 0.85rem; align-items: flex-start; }
-        .ec-contact-info__row svg { color: var(--accent); flex-shrink: 0; margin-top: 0.15rem; }
-        .ec-contact-info__label { font-size: 0.95rem; }
-        .ec-contact-info__sub { font-size: 0.82rem; color: var(--ink-faint); margin-top: 0.15rem; }
-
-        /* --------------------------- footer --------------------------- */
-        .ec-footer {
-          border-top: 1px solid var(--line-strong);
-          padding: 3.5rem 0 2rem;
-        }
-        .ec-footer__top {
-          display: grid;
-          gap: 2.5rem;
-          grid-template-columns: 1fr;
-          padding-bottom: 2.5rem;
-          border-bottom: 1px solid var(--line-strong);
-        }
-        @media (min-width: 760px) {
-          .ec-footer__top { grid-template-columns: 1.2fr 1fr 1fr; }
-        }
-        .ec-footer__tagline { margin-top: 0.75rem; color: var(--ink-dim); font-size: 0.92rem; max-width: 26rem; }
-        .ec-footer__heading {
-          font-family: var(--font-mono);
-          font-size: 0.68rem;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: var(--ink-faint);
-          margin-bottom: 0.9rem;
-        }
-        .ec-footer__links { display: flex; flex-direction: column; gap: 0.6rem; }
-        .ec-footer__links a { color: var(--ink-dim); font-size: 0.92rem; }
-        .ec-footer__links a:hover { color: var(--ink); }
-        .ec-footer__legal dl { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 0.75rem; font-size: 0.85rem; }
-        .ec-footer__legal dt { color: var(--ink-faint); font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; align-self: start; padding-top: 0.1rem; }
-        .ec-footer__legal dd { color: var(--ink-dim); }
-        .ec-footer__bottom {
-          margin-top: 2rem;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          gap: 0.75rem;
-          font-family: var(--font-mono);
-          font-size: 0.74rem;
-          color: var(--ink-faint);
-        }
-      `}</style>
-
-      <a href="#main" className="ec-skip">Skip to content</a>
-
-      {/* ---------------------------- nav ---------------------------- */}
-      <header className="ec-nav">
-        <div className="ec-container ec-nav__inner">
-          <a href="#hero" className="ec-brand" onClick={scrollTo("#hero")}>
-            ENASH <span>CLOUD</span>
-          </a>
-          <nav className="ec-nav__links" aria-label="Primary">
-            {NAV_LINKS.map((link) => (
-              <a key={link.href} href={link.href} onClick={scrollTo(link.href)}>
-                {link.label}
-              </a>
-            ))}
-            <a href="#contact" className="ec-btn ec-btn--primary" onClick={scrollTo("#contact")}>
-              Book a call <ArrowRight size={14} />
+        <nav className="desktop-nav" aria-label="Main navigation">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} onClick={(event) => scrollToSection(event, link.href)}>
+              {link.label}
             </a>
-          </nav>
-          <button
-            className="ec-nav__toggle"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          ))}
+        </nav>
+
+        <div className="header-actions">
+          <button className="cart-button" type="button" onClick={() => setCartOpen(true)} aria-label="Open cart">
+            <ShoppingBag size={18} />
+            <span>{cartCount}</span>
+          </button>
+          <a className="button button-small button-primary" href="#quote" onClick={(event) => scrollToSection(event, "#quote")}>
+            Get quote
+          </a>
+          <button className="menu-button" type="button" onClick={() => setMenuOpen((value) => !value)} aria-label="Open menu">
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-        {menuOpen && (
-          <div className="ec-nav__mobile ec-container">
-            {NAV_LINKS.map((link) => (
-              <a key={link.href} href={link.href} onClick={scrollTo(link.href)}>
-                {link.label}
-              </a>
-            ))}
-            <a href="#contact" className="ec-btn ec-btn--primary ec-btn--block" onClick={scrollTo("#contact")} style={{ marginTop: "0.5rem" }}>
-              Book a call <ArrowRight size={14} />
-            </a>
-          </div>
-        )}
       </header>
 
-      <main id="main">
-        {/* ---------------------------- hero ---------------------------- */}
-        <section id="hero" className="ec-hero ec-blueprint-grid">
-          <div className="ec-container">
-            <span className="ec-eyebrow">Cloud infrastructure · South Africa</span>
-            <h1 className="ec-hero__title">We design systems your business can stand on.</h1>
-            <p className="ec-hero__sub">
-              Enash Cloud plans, builds, and looks after the Microsoft Azure infrastructure
-              behind your business, so your team can stop worrying about servers and get back
-              to work.
-            </p>
-            <div className="ec-hero__ctas">
-              <a href="#contact" className="ec-btn ec-btn--primary" onClick={scrollTo("#contact")}>
-                Book a free assessment <ArrowRight size={14} />
-              </a>
-              <a href="#process" className="ec-btn ec-btn--ghost" onClick={scrollTo("#process")}>
-                See how we work
-              </a>
-            </div>
+      {menuOpen && (
+        <div className="mobile-menu">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} onClick={(event) => scrollToSection(event, link.href)}>
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
 
-            <div className="ec-titleblock" role="group" aria-label="Service commitments">
-              <div className="ec-titleblock__item">
-                <span className="ec-titleblock__label"><span className="ec-status-dot" aria-hidden="true" />Status</span>
-                <div className="ec-titleblock__value">Operational</div>
-              </div>
-              <div className="ec-titleblock__item">
-                <span className="ec-titleblock__label">Stack</span>
-                <div className="ec-titleblock__value">Azure</div>
-              </div>
-              <div className="ec-titleblock__item">
-                <span className="ec-titleblock__label">SLA target</span>
-                <div className="ec-titleblock__value">{slaTarget}%</div>
-              </div>
-              <div className="ec-titleblock__item">
-                <span className="ec-titleblock__label">Response target</span>
-                <div className="ec-titleblock__value">&lt;{responseTarget}h</div>
-              </div>
-              <div className="ec-titleblock__item">
-                <span className="ec-titleblock__label">Established</span>
-                <div className="ec-titleblock__value">2020</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="ec-trust">
+      <main id="top">
+        <section className="hero section-pad">
+          <div className="hero-copy">
+            <div className="eyebrow"><BadgeCheck size={16} /> Microsoft services, development, courses and shop</div>
+            <h1>Enash helps businesses move, build and grow with modern technology.</h1>
             <p>
-              TRADING AS ENASH CLOUD &nbsp;·&nbsp; INDESIGN AND DEVELOPERS (PTY) LTD &nbsp;·&nbsp; REGISTERED IN SOUTH AFRICA SINCE 2020
+              Offer Microsoft cloud services, developer services, support packages, digital products, free courses,
+              articles and business technology guidance from one clean website.
+            </p>
+            <div className="hero-actions">
+              <a className="button button-primary" href="#services" onClick={(event) => scrollToSection(event, "#services")}>
+                Explore services <ArrowRight size={18} />
+              </a>
+              <a className="button button-ghost" href="#shop" onClick={(event) => scrollToSection(event, "#shop")}>
+                Visit shop
+              </a>
+            </div>
+            <div className="hero-trust">
+              <span><CheckCircle2 size={17} /> Microsoft-first delivery</span>
+              <span><CheckCircle2 size={17} /> Azure-ready web apps</span>
+              <span><CheckCircle2 size={17} /> South Africa focused</span>
+            </div>
+          </div>
+
+          <div className="hero-panel" aria-label="Enash website features preview">
+            <img className="hero-banner" src={socialBanner} alt="Enash brand banner" />
+            <div className="hero-grid">
+              <div className="mini-card">
+                <CloudCog size={24} />
+                <strong>Microsoft</strong>
+                <span>365, Azure, Teams, SharePoint, security</span>
+              </div>
+              <div className="mini-card">
+                <Code2 size={24} />
+                <strong>Developers</strong>
+                <span>Websites, apps, APIs, databases</span>
+              </div>
+              <div className="mini-card">
+                <Store size={24} />
+                <strong>Sell online</strong>
+                <span>Products, service packages, support hours</span>
+              </div>
+              <div className="mini-card">
+                <GraduationCap size={24} />
+                <strong>Free courses</strong>
+                <span>Learn and convert visitors into leads</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="stats-strip" aria-label="Business highlights">
+          <div><strong>3</strong><span>Main income streams</span></div>
+          <div><strong>12+</strong><span>Service offers ready</span></div>
+          <div><strong>4</strong><span>Free starter courses</span></div>
+          <div><strong>1</strong><span>Quote and cart system</span></div>
+        </section>
+
+        <section id="services" className="section-pad services-section">
+          <div className="section-heading wide">
+            <span className="eyebrow"><BriefcaseBusiness size={16} /> What Enash can sell</span>
+            <h2>One site for Microsoft services, development work and growth products.</h2>
+            <p>
+              These sections are already structured as real offers. You can connect the buttons to payments,
+              a CRM, WhatsApp or an Azure backend later.
             </p>
           </div>
-        </section>
 
-        {/* ---------------------------- services ---------------------------- */}
-        <section id="services" className="ec-section">
-          <div className="ec-container">
-            <Reveal as="div" className="ec-section-head">
-              <span className="ec-eyebrow">What we deliver</span>
-              <h2 className="ec-section-title">Three ways to work with us</h2>
-              <p className="ec-section-sub">
-                Pick the entry point that matches where you are today. Most clients start with
-                one and add the others as they grow.
-              </p>
-            </Reveal>
-
-            <div className="ec-services-grid">
-              {SERVICES.map((service, index) => {
-                const Icon = service.icon;
-                return (
-                  <Reveal key={service.title} delay={index * 90} className="ec-card">
-                    <div className="ec-card__top">
-                      <span className="ec-card__tag">{service.tag}</span>
-                      <span className="ec-card__icon"><Icon size={18} /></span>
-                    </div>
-                    <h3 className="ec-card__title">{service.title}</h3>
-                    <p className="ec-card__desc">{service.description}</p>
-                    <ul className="ec-card__list">
-                      {service.includes.map((item) => (
-                        <li key={item}>
-                          <CheckCircle2 size={15} />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="ec-card__format">{service.format}</div>
-                  </Reveal>
-                );
-              })}
-            </div>
+          <div className="service-tabs" role="tablist" aria-label="Service categories">
+            {serviceGroups.map((group) => {
+              const Icon = group.icon;
+              return (
+                <button
+                  key={group.id}
+                  type="button"
+                  className={activeServiceGroup === group.id ? "active" : ""}
+                  onClick={() => setActiveServiceGroup(group.id)}
+                >
+                  <Icon size={18} /> {group.title}
+                </button>
+              );
+            })}
           </div>
-        </section>
 
-        {/* ---------------------------- process ---------------------------- */}
-        <section id="process" className="ec-section" style={{ background: "var(--bg-deep)" }}>
-          <div className="ec-container">
-            <Reveal as="div" className="ec-section-head">
-              <span className="ec-eyebrow">How we work</span>
-              <h2 className="ec-section-title">Four stages, one sheet</h2>
-              <p className="ec-section-sub">
-                Every engagement follows the same drawing, whether it is a two-week sprint or an
-                ongoing retainer.
-              </p>
-            </Reveal>
+          <div className="service-layout">
+            <article className="service-intro-card">
+              <span>{activeGroup.eyebrow}</span>
+              <h3>{activeGroup.title}</h3>
+              <p>{activeGroup.description}</p>
+              <a className="text-link" href="#quote" onClick={(event) => scrollToSection(event, "#quote")}>
+                Build a quote <ArrowRight size={16} />
+              </a>
+            </article>
 
-            <Reveal className="ec-process">
-              {PROCESS_STEPS.map((step) => (
-                <div key={step.n} className="ec-step">
-                  <span className="ec-step__n">{step.n}</span>
-                  <h3 className="ec-step__title">{step.title}</h3>
-                  <p className="ec-step__body">{step.body}</p>
-                </div>
+            <div className="service-cards">
+              {activeGroup.services.map((service) => (
+                <article className="service-card" key={service.title}>
+                  <div className="card-topline">
+                    <span>{service.price}</span>
+                    <Zap size={18} />
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.summary}</p>
+                  <ul>
+                    {service.bullets.map((bullet) => (
+                      <li key={bullet}><CheckCircle2 size={16} /> {bullet}</li>
+                    ))}
+                  </ul>
+                  <button className="button button-ghost full" type="button" onClick={() => addServiceToQuote(`${activeGroup.title}: ${service.title}`)}>
+                    Add to quote
+                  </button>
+                </article>
               ))}
-            </Reveal>
-          </div>
-        </section>
-
-        {/* ---------------------------- values ---------------------------- */}
-        <section id="values" className="ec-section">
-          <div className="ec-container">
-            <Reveal as="div" className="ec-section-head">
-              <span className="ec-eyebrow">Why Enash Cloud</span>
-              <h2 className="ec-section-title">Built for businesses that can't afford guesswork</h2>
-            </Reveal>
-
-            <div className="ec-values-grid">
-              {VALUES.map((value, index) => {
-                const Icon = value.icon;
-                return (
-                  <Reveal key={value.title} delay={index * 80} className="ec-value">
-                    <span className="ec-value__icon"><Icon size={18} /></span>
-                    <div>
-                      <h3 className="ec-value__title">{value.title}</h3>
-                      <p className="ec-value__body">{value.body}</p>
-                    </div>
-                  </Reveal>
-                );
-              })}
             </div>
           </div>
         </section>
 
-        {/* ---------------------------- about ---------------------------- */}
-        <section id="about" className="ec-section" style={{ background: "var(--bg-deep)" }}>
-          <div className="ec-container">
-            <div className="ec-about__grid">
-              <Reveal className="ec-about__body">
-                <span className="ec-eyebrow">About</span>
-                <h2 className="ec-section-title">From design and development, to systems and cloud.</h2>
-                <p style={{ marginTop: "1.25rem" }}>
-                  Enash Cloud is the technology arm of Indesign and Developers (Pty) Ltd, a South
-                  African company registered in 2020. We started by building things. Now we
-                  build the systems that keep other businesses running.
-                </p>
-                <p>
-                  Our work covers cloud infrastructure, managed IT, and the small pieces of
-                  automation that save a team real hours every week. We keep our service menu
-                  short on purpose, so every engagement gets proper attention rather than being
-                  one of fifty open tickets.
-                </p>
-              </Reveal>
-
-              <Reveal delay={120} className="ec-about__diagram" aria-hidden="true">
-                <svg viewBox="0 0 320 220" width="100%" height="auto" role="img" aria-label="Diagram of on-premise systems migrating to a connected cloud network">
-                  <g fill="none" stroke="rgba(244,239,227,0.35)" strokeWidth="1.2">
-                    <rect x="18" y="150" width="34" height="46" />
-                    <rect x="60" y="150" width="34" height="46" />
-                    <line x1="18" y1="166" x2="52" y2="166" />
-                    <line x1="60" y1="166" x2="94" y2="166" />
-                    <line x1="35" y1="150" x2="35" y2="196" strokeDasharray="3 3" />
-                    <line x1="77" y1="150" x2="77" y2="196" strokeDasharray="3 3" />
-                  </g>
-                  <g stroke="rgba(224,121,58,0.85)" strokeWidth="1.4" fill="none" strokeDasharray="5 5">
-                    <path d="M75 150 C 130 120, 150 110, 190 95" />
-                  </g>
-                  <g stroke="rgba(244,239,227,0.5)" strokeWidth="1.2" fill="none">
-                    <circle cx="225" cy="70" r="34" />
-                    <circle cx="190" cy="95" r="6" fill="#0D1F33" />
-                    <circle cx="245" cy="40" r="6" fill="#0D1F33" />
-                    <circle cx="260" cy="85" r="6" fill="#0D1F33" />
-                    <line x1="225" y1="70" x2="190" y2="95" />
-                    <line x1="225" y1="70" x2="245" y2="40" />
-                    <line x1="225" y1="70" x2="260" y2="85" />
-                  </g>
-                  <g fill="rgba(127,217,185,0.9)">
-                    <circle cx="225" cy="70" r="3" />
-                  </g>
-                  <text x="18" y="210" fill="rgba(244,239,227,0.45)" fontFamily="IBM Plex Mono, monospace" fontSize="8" letterSpacing="0.5">ON-PREMISE</text>
-                  <text x="190" y="135" fill="rgba(244,239,227,0.45)" fontFamily="IBM Plex Mono, monospace" fontSize="8" letterSpacing="0.5">AZURE</text>
-                </svg>
-              </Reveal>
+        <section id="developers" className="section-pad split-section">
+          <div className="section-heading align-left">
+            <span className="eyebrow"><Cpu size={16} /> Developer services</span>
+            <h2>Build websites, portals and backend systems for clients.</h2>
+            <p>
+              The website positions Enash as both a Microsoft service provider and a development partner.
+              That means you can sell once-off builds plus monthly maintenance.
+            </p>
+            <div className="feature-list">
+              <span><Database size={18} /> Database-ready app architecture</span>
+              <span><ShieldCheck size={18} /> Auth, roles and admin flows planned</span>
+              <span><Server size={18} /> Azure App Service and Static Web Apps friendly</span>
             </div>
+          </div>
+          <div className="workflow-card">
+            <h3>Client delivery flow</h3>
+            <ol>
+              <li><strong>Discover</strong><span>Collect business process, users, pages and data needs.</span></li>
+              <li><strong>Design</strong><span>Build screens, data model and customer journey.</span></li>
+              <li><strong>Develop</strong><span>Create frontend, backend, database and deployment pipeline.</span></li>
+              <li><strong>Support</strong><span>Keep improving the system with monthly support.</span></li>
+            </ol>
           </div>
         </section>
 
-        {/* ---------------------------- contact ---------------------------- */}
-        <section id="contact" className="ec-section">
-          <div className="ec-container">
-            <div className="ec-contact__grid">
-              <Reveal>
-                <span className="ec-eyebrow">Get in touch</span>
-                <h2 className="ec-section-title">Start with a free assessment</h2>
-                <p className="ec-section-sub" style={{ marginBottom: "2rem" }}>
-                  Tell us what you're running today. We'll tell you, in plain terms, what moving
-                  to Azure would look like and what it would cost.
-                </p>
+        <section className="section-pad packages-section">
+          <div className="section-heading">
+            <span className="eyebrow"><Star size={16} /> Productised packages</span>
+            <h2>Make buying easier with clear starter packages.</h2>
+          </div>
+          <div className="package-grid">
+            {packages.map((plan) => {
+              const Icon = plan.icon;
+              return (
+                <article className={`package-card ${plan.featured ? "featured" : ""}`} key={plan.name}>
+                  <Icon size={28} />
+                  <span>{plan.fit}</span>
+                  <h3>{plan.name}</h3>
+                  <strong>{plan.price}</strong>
+                  <ul>
+                    {plan.features.map((feature) => (
+                      <li key={feature}><CheckCircle2 size={16} /> {feature}</li>
+                    ))}
+                  </ul>
+                  <button className="button button-primary full" type="button" onClick={() => addServiceToQuote(`Package: ${plan.name}`)}>
+                    Request this package
+                  </button>
+                </article>
+              );
+            })}
+          </div>
+        </section>
 
-                {formState === "sent" ? (
-                  <div className="ec-form-note ec-form-note--success" role="status">
-                    <CheckCircle2 size={18} />
-                    <span>Thanks, {form.name.split(" ")[0] || "there"}. We've got your message and will reply within two business days.</span>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="ec-field">
-                      <label htmlFor="ec-name">Name</label>
-                      <input
-                        id="ec-name"
-                        type="text"
-                        placeholder="Your full name"
-                        value={form.name}
-                        onChange={updateField("name")}
-                        autoComplete="name"
-                      />
-                    </div>
-                    <div className="ec-field">
-                      <label htmlFor="ec-email">Work email</label>
-                      <input
-                        id="ec-email"
-                        type="email"
-                        placeholder="you@company.co.za"
-                        value={form.email}
-                        onChange={updateField("email")}
-                        autoComplete="email"
-                      />
-                    </div>
-                    <div className="ec-field">
-                      <label htmlFor="ec-company">Company</label>
-                      <input
-                        id="ec-company"
-                        type="text"
-                        placeholder="Company name"
-                        value={form.company}
-                        onChange={updateField("company")}
-                        autoComplete="organization"
-                      />
-                    </div>
-                    <div className="ec-field">
-                      <label htmlFor="ec-message">What do you need help with?</label>
-                      <textarea
-                        id="ec-message"
-                        placeholder="A short description of your current setup and what's not working"
-                        value={form.message}
-                        onChange={updateField("message")}
-                      />
-                    </div>
+        <section id="shop" className="section-pad shop-section">
+          <div className="section-heading wide">
+            <span className="eyebrow"><ShoppingBag size={16} /> Shop and service products</span>
+            <h2>Sell services, digital products and support packages directly on the site.</h2>
+            <p>The cart works now on the frontend. Real payment processing is the next backend integration.</p>
+          </div>
 
-                    <button
-                      className="ec-btn ec-btn--primary ec-btn--block"
-                      onClick={handleSubmit}
-                      disabled={formState === "submitting"}
-                    >
-                      {formState === "submitting" ? (
-                        <>
-                          <Loader2 size={15} className="ec-spin" /> Sending
-                        </>
-                      ) : (
-                        <>Request my assessment <ArrowRight size={14} /></>
-                      )}
-                    </button>
+          <div className="shop-toolbar">
+            <label className="search-box">
+              <Search size={18} />
+              <input
+                value={productSearch}
+                onChange={(event) => setProductSearch(event.target.value)}
+                placeholder="Search products or services"
+              />
+            </label>
+            <div className="filter-pills">
+              {productCategories.map((category) => (
+                <button
+                  key={category}
+                  type="button"
+                  className={productCategory === category ? "active" : ""}
+                  onClick={() => setProductCategory(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
 
-                    {formState === "error" && (
-                      <div className="ec-form-note ec-form-note--error" role="alert">
-                        <AlertCircle size={16} />
-                        <span>Please add your name, a valid email, and a short message before sending.</span>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </Reveal>
-
-              <Reveal delay={100} className="ec-contact-info">
-                <div className="ec-contact-info__row">
-                  <Mail size={18} />
-                  <div>
-                    <div className="ec-contact-info__label">hello@enashcloud.co.za</div>
-                    <div className="ec-contact-info__sub">Replace with your real inbox before launch</div>
-                  </div>
+          <div className="product-grid">
+            {filteredProducts.map((product) => (
+              <article className="product-card" key={product.id}>
+                <div className="product-icon"><Store size={24} /></div>
+                <div className="product-meta"><span>{product.category}</span><span>{product.type}</span></div>
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <div className="product-footer">
+                  <strong>{formatCurrency(product.price)}</strong>
+                  <span><Star size={15} /> {product.rating}</span>
                 </div>
-                <div className="ec-contact-info__row">
-                  <Phone size={18} />
-                  <div>
-                    <div className="ec-contact-info__label">+27 00 000 0000</div>
-                    <div className="ec-contact-info__sub">Replace with your real number before launch</div>
+                <button className="button button-primary full" type="button" onClick={() => addToCart(product)}>
+                  Add to cart
+                </button>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="courses" className="section-pad courses-section">
+          <div className="section-heading wide">
+            <span className="eyebrow"><GraduationCap size={16} /> Free courses</span>
+            <h2>Use free learning to attract people and turn them into service leads.</h2>
+            <p>
+              Visitors can enroll with email now. Later, connect this to accounts, course progress and paid learning.
+            </p>
+          </div>
+          <div className="course-email-box">
+            <Mail size={18} />
+            <input
+              value={courseEmail}
+              onChange={(event) => setCourseEmail(event.target.value)}
+              placeholder="Enter your email to enroll in free courses"
+            />
+          </div>
+          <div className="course-grid">
+            {courses.map((course) => {
+              const enrolled = enrolledCourses.includes(course.id);
+              return (
+                <article className="course-card" key={course.id}>
+                  <div className="course-topline"><BookOpen size={20} /><span>{course.category}</span></div>
+                  <h3>{course.title}</h3>
+                  <p>{course.description}</p>
+                  <div className="course-details">
+                    <span>{course.level}</span>
+                    <span>{course.duration}</span>
+                    <span>{course.lessons} lessons</span>
                   </div>
-                </div>
-                <div className="ec-contact-info__row">
-                  <MapPin size={18} />
-                  <div>
-                    <div className="ec-contact-info__label">Johannesburg, South Africa</div>
-                    <div className="ec-contact-info__sub">Serving clients locally and remotely</div>
-                  </div>
-                </div>
-              </Reveal>
+                  <button
+                    className={`button full ${enrolled ? "button-success" : "button-ghost"}`}
+                    type="button"
+                    onClick={() => enrollCourse(course.id)}
+                  >
+                    {enrolled ? "Enrolled" : "Enroll free"}
+                  </button>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        <section id="articles" className="section-pad articles-section">
+          <div className="section-heading wide">
+            <span className="eyebrow"><Newspaper size={16} /> Articles and news</span>
+            <h2>Publish useful content that brings traffic and builds trust.</h2>
+            <p>Use this area for Microsoft tips, Enash updates, technology news and business guides.</p>
+          </div>
+          <div className="article-grid">
+            {articles.map((article) => (
+              <article className="article-card" key={article.title}>
+                <div className="article-tag"><FileText size={16} /> {article.category}</div>
+                <h3>{article.title}</h3>
+                <p>{article.summary}</p>
+                <div className="article-footer"><span>{article.date}</span><span>{article.read}</span></div>
+              </article>
+            ))}
+          </div>
+          <form className="newsletter" onSubmit={handleNewsletter}>
+            <div>
+              <strong>Get Enash updates</strong>
+              <span>Microsoft tips, new courses, product drops and business technology news.</span>
+            </div>
+            <label>
+              <Mail size={18} />
+              <input
+                value={newsletterEmail}
+                onChange={(event) => setNewsletterEmail(event.target.value)}
+                placeholder="Email address"
+              />
+            </label>
+            <button className="button button-primary" type="submit">Subscribe</button>
+            {newsletterMessage && <p>{newsletterMessage}</p>}
+          </form>
+        </section>
+
+        <section id="quote" className="section-pad quote-section">
+          <div className="quote-card">
+            <div className="quote-copy">
+              <span className="eyebrow"><Mail size={16} /> Quote builder</span>
+              <h2>Let visitors build a request without calling first.</h2>
+              <p>
+                This form validates the request and creates an email-ready quote summary. Later, connect the same data to your backend.
+              </p>
+              <div className="quote-summary-box">
+                <strong>Selected services</strong>
+                {quote.selected.length === 0 ? <span>No services selected yet.</span> : quote.selected.map((item) => <span key={item}>{item}</span>)}
+              </div>
+            </div>
+
+            <form className="quote-form" onSubmit={handleQuoteSubmit}>
+              <div className="form-grid">
+                <label>Name<input value={quote.name} onChange={(event) => setQuote({ ...quote, name: event.target.value })} placeholder="Your name" /></label>
+                <label>Email<input value={quote.email} onChange={(event) => setQuote({ ...quote, email: event.target.value })} placeholder="name@example.com" /></label>
+                <label>Phone<input value={quote.phone} onChange={(event) => setQuote({ ...quote, phone: event.target.value })} placeholder="Optional" /></label>
+                <label>Company<input value={quote.company} onChange={(event) => setQuote({ ...quote, company: event.target.value })} placeholder="Optional" /></label>
+              </div>
+
+              <div className="form-grid">
+                <label>Budget
+                  <select value={quote.budget} onChange={(event) => setQuote({ ...quote, budget: event.target.value })}>
+                    <option>Under R2,500</option>
+                    <option>R2,500 - R7,500</option>
+                    <option>R7,500 - R15,000</option>
+                    <option>R15,000+</option>
+                  </select>
+                </label>
+                <label>Timeline
+                  <select value={quote.timeline} onChange={(event) => setQuote({ ...quote, timeline: event.target.value })}>
+                    <option>This week</option>
+                    <option>This month</option>
+                    <option>Next 2-3 months</option>
+                    <option>Just researching</option>
+                  </select>
+                </label>
+              </div>
+
+              <fieldset className="checkbox-grid">
+                <legend>Choose services</legend>
+                {serviceOptions.map((label) => (
+                  <button
+                    type="button"
+                    className={quote.selected.includes(label) ? "active" : ""}
+                    key={label}
+                    onClick={() => toggleQuoteService(label)}
+                  >
+                    <CheckCircle2 size={15} /> {label}
+                  </button>
+                ))}
+              </fieldset>
+
+              <label>Extra message
+                <textarea
+                  value={quote.message}
+                  onChange={(event) => setQuote({ ...quote, message: event.target.value })}
+                  placeholder="Tell us what you want to build, fix or sell."
+                />
+              </label>
+
+              <button className="button button-primary full" type="submit">Prepare quote request</button>
+              {quoteStatus === "error" && <p className="form-error">Add your name, a valid email and at least one selected service.</p>}
+              {quoteStatus === "ready" && (
+                <a className="button button-success full" href={buildMailto("Enash quote request", quoteBody)}>
+                  Send request to Enash
+                </a>
+              )}
+            </form>
+          </div>
+        </section>
+
+        <section className="section-pad faq-section">
+          <div className="section-heading">
+            <span className="eyebrow"><HelpCircle size={16} /> FAQ</span>
+            <h2>What is already working?</h2>
+          </div>
+          <div className="faq-list">
+            {faqs.map((faq, index) => (
+              <article className="faq-item" key={faq.question}>
+                <button type="button" onClick={() => setOpenFaq(openFaq === index ? -1 : index)}>
+                  <span>{faq.question}</span>
+                  <ChevronDown className={openFaq === index ? "rotate" : ""} size={20} />
+                </button>
+                {openFaq === index && <p>{faq.answer}</p>}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="contact" className="section-pad contact-section">
+          <div className="contact-card">
+            <img src={logoIcon} alt="Enash icon" />
+            <div>
+              <span className="eyebrow"><Users size={16} /> Start with Enash</span>
+              <h2>Ready to launch the full Enash platform?</h2>
+              <p>
+                Use this as the public website now, then connect payments, database, user accounts, admin dashboard and content management.
+              </p>
+            </div>
+            <div className="contact-actions">
+              <a className="button button-primary" href={`mailto:${CONTACT_EMAIL}`}>Email Enash</a>
+              <a className="button button-ghost" href={SITE_URL}>Visit site</a>
+              <span><Phone size={16} /> Add WhatsApp number later</span>
             </div>
           </div>
         </section>
       </main>
 
-      {/* ---------------------------- footer ---------------------------- */}
-      <footer className="ec-footer ec-blueprint-grid">
-        <div className="ec-container">
-          <div className="ec-footer__top">
-            <div>
-              <a href="#hero" className="ec-brand" onClick={scrollTo("#hero")}>
-                ENASH <span>CLOUD</span>
-              </a>
-              <p className="ec-footer__tagline">
-                Cloud infrastructure, managed IT, and AI automation for South African businesses,
-                built on Microsoft Azure.
-              </p>
-            </div>
-            <div>
-              <div className="ec-footer__heading">Site</div>
-              <div className="ec-footer__links">
-                {NAV_LINKS.map((link) => (
-                  <a key={link.href} href={link.href} onClick={scrollTo(link.href)}>{link.label}</a>
-                ))}
-              </div>
-            </div>
-            <div className="ec-footer__legal">
-              <div className="ec-footer__heading">Title block</div>
-              <dl>
-                <dt>Trading as</dt><dd>Enash Cloud</dd>
-                <dt>Entity</dt><dd>Indesign and Developers (Pty) Ltd</dd>
-                <dt>Reg. no.</dt><dd>2020/588040/07</dd>
-                <dt>Jurisdiction</dt><dd>South Africa</dd>
-              </dl>
-            </div>
-          </div>
-          <div className="ec-footer__bottom">
-            <span>© {new Date().getFullYear()} ENASH CLOUD. ALL SYSTEMS OPERATIONAL.</span>
-            <span>BUILT ON MICROSOFT AZURE</span>
-          </div>
-        </div>
+      <footer className="footer">
+        <img src={logoLight} alt="Enash" />
+        <p>Microsoft services, developer services, online shop, free courses, articles and business technology support.</p>
+        <span>© {new Date().getFullYear()} Enash. Built for www.enash.co.za.</span>
       </footer>
+
+      <CartDrawer
+        open={cartOpen}
+        onClose={() => setCartOpen(false)}
+        cart={cart}
+        total={cartTotal}
+        updateQuantity={updateCartQuantity}
+        checkoutHref={buildMailto("Enash shop order", checkoutBody)}
+      />
     </div>
   );
 }
+
+function CartDrawer({ open, onClose, cart, total, updateQuantity, checkoutHref }) {
+  return (
+    <aside className={`cart-drawer ${open ? "open" : ""}`} aria-hidden={!open}>
+      <div className="cart-head">
+        <div>
+          <span>Enash cart</span>
+          <strong>{cart.length} item types</strong>
+        </div>
+        <button type="button" onClick={onClose} aria-label="Close cart"><X size={22} /></button>
+      </div>
+
+      <div className="cart-body">
+        {cart.length === 0 ? (
+          <div className="empty-cart">
+            <ShoppingBag size={38} />
+            <h3>Your cart is empty</h3>
+            <p>Add service products, digital products or support packages from the shop.</p>
+          </div>
+        ) : (
+          cart.map((item) => (
+            <article className="cart-item" key={item.id}>
+              <div>
+                <strong>{item.name}</strong>
+                <span>{formatCurrency(item.price)} each</span>
+              </div>
+              <div className="quantity-controls">
+                <button type="button" onClick={() => updateQuantity(item.id, -1)}><Minus size={16} /></button>
+                <span>{item.quantity}</span>
+                <button type="button" onClick={() => updateQuantity(item.id, 1)}><Plus size={16} /></button>
+              </div>
+            </article>
+          ))
+        )}
+      </div>
+
+      <div className="cart-footer">
+        <div><span>Total</span><strong>{formatCurrency(total)}</strong></div>
+        {cart.length > 0 && <a className="button button-primary full" href={checkoutHref}>Request checkout</a>}
+      </div>
+    </aside>
+  );
+}
+
+export default App;
