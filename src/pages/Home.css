@@ -1,0 +1,225 @@
+.service-wizard {
+  border: 1px solid var(--line-strong);
+  background: var(--bg-panel);
+  padding: clamp(1rem, 2.4vw, 1.8rem);
+}
+
+.wizard-tabs,
+.wizard-progress,
+.wizard-actions,
+.wizard-complete__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.wizard-tabs {
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 1rem;
+}
+
+.wizard-tabs button {
+  border: 1px solid var(--line-strong);
+  padding: 0.75rem 1rem;
+  color: var(--ink-dim);
+}
+
+.wizard-tabs button.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg-deep);
+}
+
+.wizard-progress {
+  margin-bottom: 1.5rem;
+}
+
+.wizard-progress span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  border: 1px solid var(--line-strong);
+  padding: 0.45rem 0.65rem;
+}
+
+.wizard-progress span.is-active {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.wizard-assistant-note {
+  border-left: 3px solid var(--accent);
+  background: rgba(224, 121, 58, 0.08);
+  padding: 0.9rem 1rem;
+  color: var(--ink-dim);
+  margin-bottom: 1.25rem;
+}
+
+.wizard-grid,
+.feature-group-grid,
+.wizard-form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.wizard-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.feature-group-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.wizard-form-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.package-card {
+  text-align: left;
+  border: 1px solid var(--line-strong);
+  padding: 1.25rem;
+  background: var(--bg-deep);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.package-card:hover,
+.package-card.is-selected {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.package-card span,
+.wizard-title + .wizard-copy {
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.package-card h3 {
+  margin: 0.6rem 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.package-card p,
+.wizard-copy,
+.wizard-review p,
+.wizard-complete p,
+.wizard-complete li {
+  color: var(--ink-dim);
+}
+
+.package-card small {
+  display: block;
+  margin-top: 1rem;
+  color: var(--status);
+  font-family: var(--font-mono);
+}
+
+.wizard-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.feature-group {
+  border: 1px solid var(--line-strong);
+  background: var(--bg-deep);
+  padding: 1.1rem;
+}
+
+.feature-group h4 {
+  font-family: var(--font-display);
+  margin-bottom: 0.75rem;
+}
+
+.feature-check {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  color: var(--ink-dim);
+  margin: 0.55rem 0;
+}
+
+.feature-check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.wizard-form-grid .ec-field:nth-last-child(-n + 2),
+.wizard-form-grid .ec-field:last-child {
+  grid-column: 1 / -1;
+}
+
+.wizard-actions {
+  margin-top: 1.3rem;
+  justify-content: space-between;
+}
+
+.wizard-review {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.wizard-review h3,
+.wizard-complete h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.review-box {
+  border: 1px solid var(--line-strong);
+  background: var(--bg-deep);
+  padding: 0.9rem;
+  color: var(--ink-dim);
+}
+
+.wizard-complete {
+  border: 1px solid var(--status);
+  background: rgba(127, 217, 185, 0.08);
+  padding: 1.4rem;
+}
+
+.wizard-complete ol {
+  margin: 1rem 0 1rem 1.25rem;
+}
+
+.contact-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.contact-strip div {
+  border: 1px solid var(--line-strong);
+  background: var(--bg-panel);
+  padding: 1.1rem;
+}
+
+.contact-strip strong,
+.contact-strip span {
+  display: block;
+}
+
+.contact-strip strong {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-strip span {
+  margin-top: 0.45rem;
+  color: var(--ink-dim);
+}
+
+.diagram-node {
+  border: 1px solid var(--accent);
+  color: var(--ink);
+  padding: 1rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.diagram-line {
+  width: 1px;
+  height: 34px;
+  background: var(--line-strong);
+  margin-left: 1.2rem;
+}

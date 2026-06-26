@@ -1,0 +1,1752 @@
+export const articles = [
+  {
+    "id": "world-cup-2026-expanded-format",
+    "number": 1,
+    "category": "Sport",
+    "region": "Global",
+    "date": "2026-06-02",
+    "title": "2026 FIFA World Cup brings 48 teams and a new business opportunity map",
+    "summary": "FIFA says the 2026 tournament is the first men’s World Cup with 48 teams and three host countries: Canada, Mexico and the United States.",
+    "sourceName": "FIFA Tournament",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA says the 2026 tournament is the first men’s World Cup with 48 teams and three host countries: Canada, Mexico and the United States."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A bigger tournament means more demand around travel content, merchandise, food, streaming, hospitality and digital campaigns."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "world-cup-host-cities",
+    "number": 2,
+    "category": "Sport",
+    "region": "North America",
+    "date": "2026-06-03",
+    "title": "Sixteen host cities reshape how fans will follow World Cup 2026",
+    "summary": "FIFA lists host cities across Canada, Mexico and the United States for the 2026 World Cup.",
+    "sourceName": "FIFA Host Cities",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/host-cities",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA lists host cities across Canada, Mexico and the United States for the 2026 World Cup."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A distributed event rewards businesses that can publish guides, sell packages and run fast online shops."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "mexico-south-africa-fixture",
+    "number": 3,
+    "category": "Sport",
+    "region": "South Africa",
+    "date": "2026-06-04",
+    "title": "Mexico v South Africa shows why football news belongs on business sites",
+    "summary": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule.",
+    "sourceName": "FIFA Schedule",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Major fixtures can drive search traffic, product drops and social campaigns for South African audiences."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "world-cup-content-commerce",
+    "number": 4,
+    "category": "Sport",
+    "region": "Global",
+    "date": "2026-06-05",
+    "title": "World Cup content can turn into commerce if the workflow is ready",
+    "summary": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule.",
+    "sourceName": "FIFA Schedule",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Prepare article templates, product bundles and campaigns before demand spikes."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "world-cup-fan-data",
+    "number": 5,
+    "category": "Sport",
+    "region": "Global",
+    "date": "2026-06-06",
+    "title": "Fan demand is data: what small businesses can track during major tournaments",
+    "summary": "FIFA lists host cities across Canada, Mexico and the United States for the 2026 World Cup.",
+    "sourceName": "FIFA Host Cities",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/host-cities",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA lists host cities across Canada, Mexico and the United States for the 2026 World Cup."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Track what people search for, which fixtures drive traffic and what products sell around matches."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "world-cup-traffic-readiness",
+    "number": 6,
+    "category": "Sport",
+    "region": "Global",
+    "date": "2026-06-07",
+    "title": "If World Cup traffic arrives, your site must be ready before kickoff",
+    "summary": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule.",
+    "sourceName": "FIFA Schedule",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Prepare caching, simple navigation, mobile layouts and product pages before major events."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "content-around-major-events",
+    "number": 7,
+    "category": "Marketing",
+    "region": "Global",
+    "date": "2026-06-08",
+    "title": "Major events give small publishers predictable content calendars",
+    "summary": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule.",
+    "sourceName": "FIFA Schedule",
+    "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "FIFA publishes fixtures, venues and results for the 2026 World Cup schedule."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Plan articles, landing pages and shop offers around real public calendars."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ioc-neutrality",
+    "number": 8,
+    "category": "Sport",
+    "region": "Global",
+    "date": "2026-06-09",
+    "title": "IOC neutrality debate shows sport is also governance and politics",
+    "summary": "Reuters reported IOC discussion about Olympic Charter changes and political neutrality in sport.",
+    "sourceName": "Reuters IOC Neutrality",
+    "sourceUrl": "https://www.reuters.com/sports/ioc-official-says-charter-changes-sports-neutrality-vital-complicated-world-2026-06-25/",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Reuters reported IOC discussion about Olympic Charter changes and political neutrality in sport."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Sports coverage can connect fan interest with governance, sponsorship, media rights and public trust."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ai-environment-costs",
+    "number": 9,
+    "category": "Technology",
+    "region": "Global",
+    "date": "2026-06-10",
+    "title": "UN pressure puts AI data-centre energy use into the spotlight",
+    "summary": "Reuters reported that the UN Secretary-General called for AI firms to disclose environmental costs including energy, water, carbon and land use.",
+    "sourceName": "Reuters AI Environment",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/un-chiefs-calls-ai-firms-come-clean-environmental-costs-2026-06-23/",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Reuters reported that the UN Secretary-General called for AI firms to disclose environmental costs including energy, water, carbon and land use."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Small businesses using AI should ask vendors about cost, privacy, hosting region and whether each AI feature is worth running."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ai-energy-business",
+    "number": 10,
+    "category": "Energy",
+    "region": "Global",
+    "date": "2026-06-11",
+    "title": "IEA warning is simple: there is no AI without energy",
+    "summary": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems.",
+    "sourceName": "IEA Energy and AI",
+    "sourceUrl": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "AI adoption should be planned with cloud costs, power reliability, usage limits and business value in mind."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ai-energy-local-sme",
+    "number": 11,
+    "category": "Energy",
+    "region": "Africa",
+    "date": "2026-06-12",
+    "title": "AI tools help SMEs, but power and connectivity still decide outcomes",
+    "summary": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems.",
+    "sourceName": "IEA Energy and AI",
+    "sourceUrl": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Start with focused AI use cases that save time instead of tools with no workflow."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "eu-ai-grids",
+    "number": 12,
+    "category": "Energy",
+    "region": "Europe",
+    "date": "2026-06-13",
+    "title": "Europe links AI with smarter energy-grid planning",
+    "summary": "The European Commission links digitalisation, AI and energy-grid initiatives in its energy-system work.",
+    "sourceName": "EU Digital Energy",
+    "sourceUrl": "https://energy.ec.europa.eu/topics/eu-energy-system/digitalisation-energy-system_en",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The European Commission links digitalisation, AI and energy-grid initiatives in its energy-system work."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Energy and AI will become connected topics in regulation, planning and public debate."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "cost-alerts-cloud",
+    "number": 13,
+    "category": "Cloud",
+    "region": "Global",
+    "date": "2026-06-14",
+    "title": "Cloud cost control should be part of every launch",
+    "summary": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems.",
+    "sourceName": "IEA Energy and AI",
+    "sourceUrl": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The IEA says AI depends on affordable, reliable and sustainable electricity, while AI can also transform energy systems."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Budget alerts, simple architecture and usage reviews prevent new businesses from wasting cloud credits."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "cybersecurity-ai-risk",
+    "number": 14,
+    "category": "Security",
+    "region": "Global",
+    "date": "2026-06-15",
+    "title": "AI-related vulnerabilities become a top cyber-risk concern",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Treat AI adoption as part of security governance, not only productivity."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "phishing-fraud-ai",
+    "number": 15,
+    "category": "Security",
+    "region": "Global",
+    "date": "2026-06-16",
+    "title": "AI makes phishing faster, so basic security training matters more",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A small team needs MFA, password rules, recovery contacts and staff training before adding more online systems."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "mfa-basics-for-teams",
+    "number": 16,
+    "category": "Security",
+    "region": "Global",
+    "date": "2026-06-17",
+    "title": "MFA remains one of the cheapest serious security upgrades",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "MFA and recovery planning protect email, invoices and client data."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "small-business-cyber-checklist",
+    "number": 17,
+    "category": "Security",
+    "region": "Global",
+    "date": "2026-06-18",
+    "title": "A basic cyber checklist protects revenue, not just devices",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Use MFA, backups, updates, owner lists, password managers, recovery email and staff training."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "data-privacy-in-ai-era",
+    "number": 18,
+    "category": "Security",
+    "region": "Global",
+    "date": "2026-06-19",
+    "title": "Privacy risk grows as AI processes more personal data",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Websites should collect only necessary data, explain purpose and secure forms and exports."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "remote-support-packages",
+    "number": 19,
+    "category": "Support",
+    "region": "Global",
+    "date": "2026-06-20",
+    "title": "Remote support works better when requests are structured first",
+    "summary": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes.",
+    "sourceName": "WEF Cybersecurity Outlook 2026",
+    "sourceUrl": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The WEF Global Cybersecurity Outlook 2026 highlights AI vulnerabilities, phishing, fraud and software exploitation as important cyber-risk themes."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A request wizard collects context before support starts, reducing misdiagnosis."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "microsoft-japan-investment",
+    "number": 20,
+    "category": "Technology",
+    "region": "Japan",
+    "date": "2026-06-21",
+    "title": "Microsoft’s Japan AI investment shows cloud competition moving to infrastructure",
+    "summary": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development.",
+    "sourceName": "Microsoft Japan AI Investment",
+    "sourceUrl": "https://news.microsoft.com/source/asia/2026/04/03/microsoft-deepens-its-commitment-to-japan-with-10-billion-investment-in-ai-infrastructure-cybersecurity-workforce/",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Cloud providers are competing on compute, skills and security; service providers must explain the business impact."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "microsoft-cloud-skills",
+    "number": 21,
+    "category": "Technology",
+    "region": "Global",
+    "date": "2026-06-22",
+    "title": "Cloud skills are becoming part of workforce strategy",
+    "summary": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development.",
+    "sourceName": "Microsoft Japan AI Investment",
+    "sourceUrl": "https://news.microsoft.com/source/asia/2026/04/03/microsoft-deepens-its-commitment-to-japan-with-10-billion-investment-in-ai-infrastructure-cybersecurity-workforce/",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Training pages and free courses attract clients who need capability before buying projects."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "cloud-provider-investments",
+    "number": 22,
+    "category": "Cloud",
+    "region": "Global",
+    "date": "2026-06-23",
+    "title": "Big cloud investments signal where the next skills demand will be",
+    "summary": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development.",
+    "sourceName": "Microsoft Japan AI Investment",
+    "sourceUrl": "https://news.microsoft.com/source/asia/2026/04/03/microsoft-deepens-its-commitment-to-japan-with-10-billion-investment-in-ai-infrastructure-cybersecurity-workforce/",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Microsoft announced a major 2026 Japan investment in AI infrastructure, cybersecurity and workforce development."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Local providers should build course libraries around upcoming client skills demand."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "african-smes-digital-capability",
+    "number": 23,
+    "category": "Africa",
+    "region": "Africa",
+    "date": "2026-06-24",
+    "title": "African SMEs are increasingly judged by digital capability",
+    "summary": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data.",
+    "sourceName": "SAP Africa SMEs",
+    "sourceUrl": "https://news.sap.com/africa/2026/03/the-essential-tech-trends-for-african-smes/",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Service packages should help SMEs implement practical foundations before expensive transformation."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "sme-cloud-erp",
+    "number": 24,
+    "category": "Africa",
+    "region": "Africa",
+    "date": "2026-06-25",
+    "title": "Cloud tools let smaller firms use enterprise-style systems without heavy upfront infrastructure",
+    "summary": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data.",
+    "sourceName": "SAP Africa SMEs",
+    "sourceUrl": "https://news.sap.com/africa/2026/03/the-essential-tech-trends-for-african-smes/",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Small packages should focus on setup, training and handover, not only software resale."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "clean-data-for-ai",
+    "number": 25,
+    "category": "Technology",
+    "region": "Africa",
+    "date": "2026-06-26",
+    "title": "Clean data matters before AI can help a business",
+    "summary": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data.",
+    "sourceName": "SAP Africa SMEs",
+    "sourceUrl": "https://news.sap.com/africa/2026/03/the-essential-tech-trends-for-african-smes/",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Organise customer, product, invoice and support data before expecting useful AI outputs."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "training-before-tooling",
+    "number": 26,
+    "category": "Learning",
+    "region": "Africa",
+    "date": "2026-06-01",
+    "title": "Training should come before expensive tooling",
+    "summary": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data.",
+    "sourceName": "SAP Africa SMEs",
+    "sourceUrl": "https://news.sap.com/africa/2026/03/the-essential-tech-trends-for-african-smes/",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "SAP Africa says African SMEs in 2026 will be shaped by digital capabilities such as cloud, business AI, ERP and clean data."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A team must understand the process and responsibility model before the tool becomes useful."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "world-bank-digital-ai",
+    "number": 27,
+    "category": "Development",
+    "region": "Global",
+    "date": "2026-06-02",
+    "title": "World Bank frames digital and AI around infrastructure, safeguards and skills",
+    "summary": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills.",
+    "sourceName": "World Bank Digital and AI",
+    "sourceUrl": "https://www.worldbank.org/ext/en/topic/digital-and-ai",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Public-facing tools need trust, identity, payments, data and access from the start."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "public-website-as-service-platform",
+    "number": 28,
+    "category": "Business",
+    "region": "Global",
+    "date": "2026-06-03",
+    "title": "A modern business website should be a service platform, not a poster",
+    "summary": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills.",
+    "sourceName": "World Bank Digital and AI",
+    "sourceUrl": "https://www.worldbank.org/ext/en/topic/digital-and-ai",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A site should let users buy, learn, request and read instead of only asking them to phone."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "react-as-sme-tool",
+    "number": 29,
+    "category": "Developer",
+    "region": "Global",
+    "date": "2026-06-04",
+    "title": "React remains useful because businesses need interactive workflows",
+    "summary": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills.",
+    "sourceName": "World Bank Digital and AI",
+    "sourceUrl": "https://www.worldbank.org/ext/en/topic/digital-and-ai",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "React can power request wizards, shops, course readers and dashboards."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "public-sector-digital-lessons",
+    "number": 30,
+    "category": "Development",
+    "region": "Global",
+    "date": "2026-06-05",
+    "title": "Digital public infrastructure lessons can improve private websites too",
+    "summary": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills.",
+    "sourceName": "World Bank Digital and AI",
+    "sourceUrl": "https://www.worldbank.org/ext/en/topic/digital-and-ai",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank frames digital and AI work around connectivity, digital public infrastructure, data systems, safeguards and skills."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Private businesses should copy the discipline: clear forms, secure data, accessibility and measurable outcomes."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "sa-world-bank-context",
+    "number": 31,
+    "category": "South Africa",
+    "region": "South Africa",
+    "date": "2026-06-06",
+    "title": "South Africa’s reform agenda keeps digital infrastructure relevant",
+    "summary": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs.",
+    "sourceName": "World Bank South Africa",
+    "sourceUrl": "https://www.worldbank.org/ext/en/country/southafrica",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Local tech businesses can position services around reliability, cost control and access."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "sa-youth-skills-digital",
+    "number": 32,
+    "category": "South Africa",
+    "region": "South Africa",
+    "date": "2026-06-07",
+    "title": "South Africa’s young population makes digital skills urgent",
+    "summary": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs.",
+    "sourceName": "World Bank South Africa",
+    "sourceUrl": "https://www.worldbank.org/ext/en/country/southafrica",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Free courses can serve students, founders and job seekers while building the Enash brand."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "telecommunications-reform",
+    "number": 33,
+    "category": "South Africa",
+    "region": "South Africa",
+    "date": "2026-06-08",
+    "title": "Telecommunications reform links directly to online business growth",
+    "summary": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs.",
+    "sourceName": "World Bank South Africa",
+    "sourceUrl": "https://www.worldbank.org/ext/en/country/southafrica",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The World Bank describes South Africa’s development context, reform priorities and major infrastructure needs."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Better connectivity creates value when businesses have usable online systems ready."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "sa-infrastructure-funding",
+    "number": 34,
+    "category": "South Africa",
+    "region": "South Africa",
+    "date": "2026-06-09",
+    "title": "World Bank-backed guarantee facility targets South African infrastructure",
+    "summary": "Reuters reported World Bank support for a South African infrastructure credit guarantee facility.",
+    "sourceName": "Reuters SA Infrastructure",
+    "sourceUrl": "https://www.reuters.com/world/africa/world-bank-backs-south-africas-infrastructure-rollout-with-350-million-funding-2026-03-06/",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Reuters reported World Bank support for a South African infrastructure credit guarantee facility."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Better infrastructure can unlock digital business growth, but companies still need websites and cloud systems."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "standard-bank-africa-growth",
+    "number": 35,
+    "category": "Business",
+    "region": "Africa",
+    "date": "2026-06-10",
+    "title": "Standard Bank strategy points to African trade and infrastructure growth",
+    "summary": "Reuters reported Standard Bank’s 2026-2028 strategy around trade and infrastructure growth across Africa.",
+    "sourceName": "Reuters Standard Bank",
+    "sourceUrl": "https://www.reuters.com/world/africa/standard-bank-sees-earnings-growth-8-12-2026-2028-2026-03-26/",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Reuters reported Standard Bank’s 2026-2028 strategy around trade and infrastructure growth across Africa."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Tech services can align with trade, payments, compliance and digital operations across borders."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "africa-trade-infrastructure-tech",
+    "number": 36,
+    "category": "Business",
+    "region": "Africa",
+    "date": "2026-06-11",
+    "title": "African trade growth needs practical digital systems",
+    "summary": "Reuters reported Standard Bank’s 2026-2028 strategy around trade and infrastructure growth across Africa.",
+    "sourceName": "Reuters Standard Bank",
+    "sourceUrl": "https://www.reuters.com/world/africa/standard-bank-sees-earnings-growth-8-12-2026-2028-2026-03-26/",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "Reuters reported Standard Bank’s 2026-2028 strategy around trade and infrastructure growth across Africa."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Invoices, customer portals, cloud records and reliable websites are pieces of trade infrastructure."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "digital-services-sme-sales",
+    "number": 37,
+    "category": "Business",
+    "region": "Global",
+    "date": "2026-06-12",
+    "title": "Digital services help SMEs reach customers outside their street or town",
+    "summary": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets.",
+    "sourceName": "ITIF SME Digital Services",
+    "sourceUrl": "https://itif.org/publications/2025/08/27/how-digital-services-empower-smes-and-start-ups/",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A website with shop, articles, courses and service requests is more than a digital brochure."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "website-shop-course-news-model",
+    "number": 38,
+    "category": "Business",
+    "region": "South Africa",
+    "date": "2026-06-13",
+    "title": "The Enash model combines services, shop, learning and news",
+    "summary": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets.",
+    "sourceName": "ITIF SME Digital Services",
+    "sourceUrl": "https://itif.org/publications/2025/08/27/how-digital-services-empower-smes-and-start-ups/",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Visitors can buy a product, learn free skills, read articles or request a service."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "articles-as-sales-funnel",
+    "number": 39,
+    "category": "Marketing",
+    "region": "Global",
+    "date": "2026-06-14",
+    "title": "Articles can bring visitors who are not yet ready to buy",
+    "summary": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets.",
+    "sourceName": "ITIF SME Digital Services",
+    "sourceUrl": "https://itif.org/publications/2025/08/27/how-digital-services-empower-smes-and-start-ups/",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Useful news analysis builds trust before a visitor becomes a learner, customer or client."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "digital-products-low-friction",
+    "number": 40,
+    "category": "E-commerce",
+    "region": "Global",
+    "date": "2026-06-15",
+    "title": "Digital products give a service business low-friction revenue",
+    "summary": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets.",
+    "sourceName": "ITIF SME Digital Services",
+    "sourceUrl": "https://itif.org/publications/2025/08/27/how-digital-services-empower-smes-and-start-ups/",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Templates and guides are entry-level offers for people who want to act today."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "service-business-product-ladder",
+    "number": 41,
+    "category": "Business",
+    "region": "Global",
+    "date": "2026-06-16",
+    "title": "A service business can earn from products, courses and implementation",
+    "summary": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets.",
+    "sourceName": "ITIF SME Digital Services",
+    "sourceUrl": "https://itif.org/publications/2025/08/27/how-digital-services-empower-smes-and-start-ups/",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "ITIF reported that digital services and e-commerce platforms help SMEs reach customers and participate in online markets."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "The ladder is: article, course, template, support credit, service package, managed support."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ai-adoption-smes",
+    "number": 42,
+    "category": "Business",
+    "region": "OECD",
+    "date": "2026-06-17",
+    "title": "OECD data shows AI adoption is moving from experiment to business reality",
+    "summary": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face.",
+    "sourceName": "OECD AI SMEs",
+    "sourceUrl": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6/426399c1-en.pdf",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Training and implementation packages close the gap between AI interest and daily use."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "free-courses-leadership",
+    "number": 43,
+    "category": "Learning",
+    "region": "Global",
+    "date": "2026-06-18",
+    "title": "Free courses can be a serious business asset",
+    "summary": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face.",
+    "sourceName": "OECD AI SMEs",
+    "sourceUrl": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6/426399c1-en.pdf",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Free learning lowers fear and creates a pipeline for paid implementation work."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "ai-as-assistant-not-magic",
+    "number": 44,
+    "category": "Technology",
+    "region": "Global",
+    "date": "2026-06-19",
+    "title": "AI should assist workflows, not replace business thinking",
+    "summary": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face.",
+    "sourceName": "OECD AI SMEs",
+    "sourceUrl": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6/426399c1-en.pdf",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The OECD report reviews AI adoption by SMEs and the barriers smaller firms face."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "The winning use cases are narrow: summarise tickets, draft content, clean data and classify messages."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "south-africa-digital-economy",
+    "number": 45,
+    "category": "South Africa",
+    "region": "South Africa",
+    "date": "2026-06-20",
+    "title": "South Africa’s digital economy guide still points to connectivity and online services",
+    "summary": "The International Trade Administration describes South Africa’s digital economy as driven by connectivity, e-commerce, fintech and digital services.",
+    "sourceName": "South Africa Digital Economy",
+    "sourceUrl": "https://www.trade.gov/country-commercial-guides/south-africa-digital-economy",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The International Trade Administration describes South Africa’s digital economy as driven by connectivity, e-commerce, fintech and digital services."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Local providers should package domain, email, hosting, shop, CRM and support steps."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "nasa-botswana-artemis",
+    "number": 46,
+    "category": "Space",
+    "region": "Africa",
+    "date": "2026-06-21",
+    "title": "Botswana joining Artemis Accords shows Africa’s space conversation is growing",
+    "summary": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords.",
+    "sourceName": "NASA 2026 Releases",
+    "sourceUrl": "https://www.nasa.gov/2026-news-releases/",
+    "readTime": "5 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Space news supports STEM learning, data skills and national technology ambition."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "nasa-news-public-learning",
+    "number": 47,
+    "category": "Space",
+    "region": "Global",
+    "date": "2026-06-22",
+    "title": "NASA’s public news archive is a useful learning source for science content",
+    "summary": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords.",
+    "sourceName": "NASA 2026 Releases",
+    "sourceUrl": "https://www.nasa.gov/2026-news-releases/",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A learning platform can use public science events to teach research and technology literacy."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "news-site-trust-sources",
+    "number": 48,
+    "category": "Media",
+    "region": "Global",
+    "date": "2026-06-23",
+    "title": "A public news page needs source links and clear context",
+    "summary": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords.",
+    "sourceName": "NASA 2026 Releases",
+    "sourceUrl": "https://www.nasa.gov/2026-news-releases/",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "NASA’s 2026 news archive includes mission, partnership and Artemis-related releases, including Botswana signing the Artemis Accords."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Trust grows when readers can see where the event came from and why it matters."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "climate-events-2026",
+    "number": 49,
+    "category": "Climate",
+    "region": "Global",
+    "date": "2026-06-24",
+    "title": "2026 climate calendar keeps environment and land issues in public view",
+    "summary": "The 2026 climate events guide notes major global climate, biodiversity and land events.",
+    "sourceName": "Climate Events 2026",
+    "sourceUrl": "https://thinklandscape.globallandscapesforum.org/101100/climate-events-2026/",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The 2026 climate events guide notes major global climate, biodiversity and land events."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "News sections can attract broader audiences by covering climate, business resilience and technology."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  },
+  {
+    "id": "europe-heatwave-business",
+    "number": 50,
+    "category": "Climate",
+    "region": "Europe",
+    "date": "2026-06-25",
+    "title": "Europe heatwave coverage shows climate risk is also an operations risk",
+    "summary": "The Guardian covered a severe European heatwave that disrupted schools, health systems and infrastructure.",
+    "sourceName": "Guardian Europe Heatwave",
+    "sourceUrl": "https://www.theguardian.com/world/live/2026/jun/25/europe-heatwave-uk-italy-france-record-temperature-latest-news-updates",
+    "readTime": "4 min read",
+    "sections": [
+      {
+        "heading": "What happened",
+        "body": "The Guardian covered a severe European heatwave that disrupted schools, health systems and infrastructure."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Heat affects logistics, workplaces, servers, staff safety and customer behaviour."
+      },
+      {
+        "heading": "What businesses can do",
+        "body": "Turn the event into action: update your website, improve customer communication, prepare digital offers, protect data, and create a simple workflow your team can repeat."
+      },
+      {
+        "heading": "Enash angle",
+        "body": "Enash can connect public events with practical technology services, free learning, templates, and self-service package requests."
+      }
+    ],
+    "takeaways": [
+      "Connect the event to a real business process.",
+      "Publish with source links and clear context.",
+      "Offer a next action such as a course, template, shop item, or service request."
+    ]
+  }
+];
