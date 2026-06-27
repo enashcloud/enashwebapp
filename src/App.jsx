@@ -43,7 +43,12 @@ export default function App() {
   }, [route.page]);
 
   return (
+    
     <div className="ec-root">
+      <div className="construction-banner">
+        <span>🚧</span>
+        This website is currently under construction. Some pages and features may not be fully available yet.
+      </div>
       <a href="#main" className="ec-skip">Skip to content</a>
       <Navbar currentPage={route.page} />
       <Suspense fallback={<main id="main" className="ec-section"><div className="ec-container"><span className="ec-eyebrow">Loading</span><h1 className="ec-section-title">Preparing Enash...</h1></div></main>}>

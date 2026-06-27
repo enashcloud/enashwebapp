@@ -12,6 +12,23 @@ body {
   background: #142c46;
 }
 
+.construction-banner {
+  width: 100%;
+  background: #ff7a2f;
+  color: #0b1f33;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 9999;
+}
+
+.construction-banner span {
+  margin-right: 8px;
+}
+
 .ec-root {
   --bg: #142C46;
   --bg-deep: #0D1F33;
